@@ -1,13 +1,4 @@
-"""
-We call a 'mutable' object in Python if it's value can be changed.
-Built-in mutable objects in Python:
-	- list
-	- dict
-	- set
-	- Bytearray
-"""
-
-shopping_list = ["miilk",
+shopping_list = ["milk",
                  "pasta",
                  "eggs",
                  "spam",
@@ -21,9 +12,11 @@ print(id(another_list))
 shopping_list += ["cookies"]
 print(shopping_list)
 print(id(shopping_list))
+print(another_list)
 
 a = b = c = d = e = f = another_list
 print(a)
+
 print("Adding cream")
 b.append("cream")
 print(c)
